@@ -1,78 +1,70 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Visual Bitcoin by btcontract</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8">
+    <title>Visual Bitcoin by BitcoinBelieverxxx</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <strong>Visual Bitcoin Wallet</strong>
-        <p>A beautiful Bitcoin wallet with advanced security features</p>
+    <section class="page-header">
+      <h1 class="project-name">Visual Bitcoin</h1>
+      <h2 class="project-tagline">A beautiful Bitcoin wallet with advanced security features</h2>
+      <a href="https://github.com/BitcoinBelieverxxx/wallet" class="btn">View on GitHub</a>
+      <a href="https://github.com/BitcoinBelieverxxx/wallet/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/BitcoinBelieverxxx/wallet/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-        <p class="view"><a href="https://github.com/btcontract/VisualBitcoinWallet">View the Project on GitHub <small>btcontract/VisualBitcoinWallet</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/btcontract/VisualBitcoinWallet/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/btcontract/VisualBitcoinWallet/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/btcontract/VisualBitcoinWallet">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <p>This is a standalone wallet for Android devices which does not depend on any centralized service and gives you full control over your money.</p>
+    <section class="main-content">
+      <p>This is a standalone wallet for Android devices which does not depend on any centralized service and gives you full control over your money.</p>
 
 <ul>
 <li><p>It is an <a href="https://en.bitcoin.it/wiki/Deterministic_wallet">HD wallet</a> which means your balance and full transaction history can always be restored using a single mnemonic code should anything bad happen to your device. </p></li>
-<li><p>It is intended for mobile devices, hence wallet does not store a full <a href="https://en.bitcoin.it/wiki/Block_chain">Blockchain</a> but instead acquires all the relevant data from random Bitcoin nodes using an <a href="https://en.bitcoin.it/wiki/Scalability#Simplified_payment_verification">SPV technique</a>.</p></li>
+<li><p>It is intended for mobile devices, hence wallet does not store a full <a href="https://en.bitcoin.it/wiki/Block_chain">Block chain</a> but instead acquires all the relevant data from random Bitcoin nodes using an <a href="http://bitcoin.stackexchange.com/questions/4649/what-is-an-spv-client">SPV technique</a>.</p></li>
 <li><p>It utilizes a nice physical metaphor displaying your bitcoins as a bunch of actual coins that you can interact with. Coins of the same color belong to the same <a href="http://bitcoin.stackexchange.com/questions/4301/what-is-an-unspent-output">unspent output</a> and thus provide you with a deep insight into the structure of your money.</p></li>
-<li><p>Multi-send is fully supported: transfer funds to many different addresses in a single transaction and save on fees.</p></li>
 </ul>
 
 <h3>
-<a id="mnemonic-code" class="anchor" href="#mnemonic-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mnemonic code</h3>
+<a id="mnemonic-code" class="anchor" href="#mnemonic-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mnemonic code</h3>
 
 <p>Visual Bitcoin is an HD wallet, thus all your private keys come from a single mnemonic code which is essentially a phrase comprising of 12 random words. Whoever knows your mnemonic code also fully controls your bitcoins so it should be kept private at all times.</p>
 
-<p><a name="mnemonic"></a> Also, <strong style="color:#FF0000">in case if you lose your device or forget your wallet password only mnemonic code can get your bitcoins back, it's that important!</strong> Ideally one of the following actions should be taken once a new wallet is created:</p>
+<p>Ideally one of the following actions should be taken once a new wallet is created:</p>
 
 <ul>
 <li>Either write your mnemonic code on a piece of paper and store it in a really secure place.</li>
-<li>Or encrypt your mnemonic code using wallet password as a key and store it wherever you like. For that you can use AES-256 text encryption in <a href="https://play.google.com/store/apps/details?id=com.paranoiaworks.unicus.android.sse&amp;hl=en">Secret Space Encryptor</a> which is a popular open source Android app. </li>
+<li>Or encrypt your mnemonic code using wallet password as a key and store it wherever you like. You can do it using <a href="https://play.google.com/store/apps/details?id=com.paranoiaworks.unicus.android.sse&amp;hl=en">Secret Space Encryptor</a>, a popular open source Android app which uses proven cryptography methods for string encryption. </li>
 </ul>
 
 <h3>
-<a id="destruction-code" class="anchor" href="#destruction-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Destruction code</h3>
+<a id="destruction-code" class="anchor" href="#destruction-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Destruction code</h3>
 
 <p>Good password protects your money from being stolen, but that's about it. In this wallet you can also set a destruction code which can help in preserving your funds even if you are forced to reveal a password. Here is how it works:</p>
 
 <ol>
 <li><p>First go to Wallet settings and set a destruction code there. Presence of a destruction code will not be indicated anywhere so you will have to remember it was set and exists.</p></li>
-<li><p>Next notice a "Lock" icon in app's task bar. Whenever you press it the wallet immediately becomes closed and locked meaning one has to enter a password to open it. <strong>The important thing is that once you have a destruction code set you can enter it there instead of password</strong>.</p></li>
-<li><p>If while trying to unlock a wallet you do enter your destruction code instead of password then your current wallet data will be silently erased and a completely new wallet with a zero balance will be created. Destruction code will become a password for that new wallet. Everything would seem like you have indeed provided a password and your wallet is empty. You will be able to restore your original wallet at a later time using your mnemonic code.</p></li>
+<li><p>Then check "Ask for password on startup" option which is also located in Wallet settings. This will make a password form to appear every time you launch a wallet and that form is the only place where you have a chance to provide a destruction code instead of a real password.</p></li>
+<li><p>If you enter your destruction code on app launch then your current wallet data will be silently erased and a completely new wallet with a zero balance will be created. Destruction code will become a password for that new wallet. Everything would seem like you have indeed provided a password and your wallet is empty. You will be able to restore your original wallet at a later time using your mnemonic code.</p></li>
 </ol>
 
 <h3>
-<a id="bandwidth-warning" class="anchor" href="#bandwidth-warning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bandwidth warning</h3>
+<a id="bandwidth-warning" class="anchor" href="#bandwidth-warning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bandwidth warning</h3>
 
 <p>As long as wallet is running it communicates with Bitcoin network and that could be taking up to 2 megabytes per hour. This is not a problem at all for Wi-Fi networks but can be sensitive if you are on a costly cellular data plan. In a latter case make sure you do close a wallet every time after you're done working with it.</p>
 
 <p>The concept of shutting down is subtle on Android: if while inside an app you press "home" then wallet will be sent hanging in a background for an indefinite time and it will be consuming traffic there. If instead you press "back" then wallet will also be sent to background but in a couple of minutes it will really be closed.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/btcontract">btcontract</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/BitcoinBelieverxxx/wallet">Visual Bitcoin</a> is maintained by <a href="https://github.com/BitcoinBelieverxxx">BitcoinBelieverxxx</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+    </section>
+
+  
   </body>
 </html>
